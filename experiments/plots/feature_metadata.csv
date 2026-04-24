@@ -1,0 +1,20 @@
+feature_id,active_rate,explanation,positive_logits_hint,status,url
+1041,0.86,technical terms and concepts related to programming or data structures,"▁Efq, ▁ſeveral, ▁Monfieur, ▁Majefty, ▁myſelf",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1041
+7541,0.724,phrases related to technical descriptions and comparisons in software development contexts,"GraphicsUnit, ⓧ, ftagPool, Portail, ▁تضيفلها",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7541
+13962,0.816,phrases involving the transfer or sharing of ownership or information,"▁handing, ▁}}""></, ▁handover, ▁kepada, ▁gifts",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/13962
+12197,0.136,"references to keys and key points, especially in contexts involving coding or interaction","▁keys, ▁Keys, ▁key, ▁KEY, ▁Key",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/12197
+2268,0.106,"references to cell phone etiquette, usage, and related social norms","▁iPad, ▁LCD, ▁jack, ▁téléphonique, usercontent",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2268
+7507,0.608,numerical data and references related to statistics and measurements,"▁betweenstory, Autoritní, sizeCache, ▁disambiguazione, ArrowToggle",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7507
+11361,0.796,phrases related to espionage and covert operations,"PROLOG, StructEnd, colhead, ▁tasked, ▁task",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/11361
+9265,0.864,references to socio-economic issues and health disparities,"▁people, ▁linkovi, ▁young, ▁individuals, ▁snippetHide",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/9265
+8215,0.904,financial terms related to stock performance and expected returns,"▁незавершена, ▁الرياضيه, ſelves, ▁myſelf, ▁pleaſure",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/8215
+5343,0.27,various mentions and contexts related to gifts,"▁gifts, ▁gift, GIFT, ▁Gift, ▁Gifts",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/5343
+8782,0.708,"conversations or interactions occurring in specific locations, often related to either humor or tension","XmlAccessType, parsedMessage, WithIOException, ▁resourceCulture, DeleteBehavior",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/8782
+14617,0.71,"references to purchasing supplies or tools, particularly in a retail context","▁kios, ▁kiosk, ▁downtown, ▁cashier, ▁clerks",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/14617
+3268,0.126,events and activities related to eating and dining experiences,"▁meals, ▁food, ▁meal, food, ▁foods",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/3268
+9547,0.41,references to documentation or licensing information related to software,"▁documents, ▁files, ▁downloaded, ▁file, ▁copies",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/9547
+6810,0.064,terms related to software licensing and legal disclaimers,"<bos>, <eos>, ро, MathML, нен",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/6810
+8929,0.904,legal terminology and expressions of formal communication,"évaluateur, ▁beginnetje, ▁Meksiku, Tembelea, ▁wireType",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/8929
+4555,0.584,terms related to production and economic viability in the context of natural gas and LPG,"RectangleBorder, حوالہ, ⓧ, DockStyle, ▁ModelRenderer",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4555
+4628,0.632,phrases associated with deception and misinformation,"▁us, ▁everyone, ▁readers, ▁customers, ▁audiences",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4628
+13354,0.112,references to food and beverages,"▁drinks, ▁drink, ▁beverages, ▁beverage, ▁cocktails",ok,https://www.neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/13354
