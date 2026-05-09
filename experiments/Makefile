@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: setup install clean
+.PHONY: setup install notebook clean
 
 setup:
 # 	Installing useful software
@@ -9,19 +9,23 @@ setup:
 
 #   Installing uv, python and then all the packages
 	curl -LsSf https://astral.sh/uv/install.sh | sh
-	. ~/.local/bin/env && uv python install 3.13.12
-	. ~/.local/bin/env && uv python pin 3.13.12
-	. ~/.local/bin/env && uv sync
+	uv python install 3.13.12
+	uv python pin 3.13.12
+	uv sync
+	uv run python -m ipykernel install --user --name experiments-uv --display-name "Python (experiments-uv)"
 
 #   GitHub auth + credential wiring (required on fresh hosts)
 	@gh auth status >/dev/null 2>&1 || gh auth login --git-protocol https --web
 	@gh auth setup-git
 	@git remote set-url origin https://github.com/Sachin2911/Independence-Is-All-You-Need.git
 	git config --global user.email "sachinmohan29@gmail.com"
-  	git config --global user.name "Sachin"
+	git config --global user.name "Sachin"
 #   HuggingFace login
 	@read -p "Enter HuggingFace token: " hf_token; \
-	. ~/.local/bin/env && uv run hf auth login --token $$hf_token
+	uv run hf auth login --token $$hf_token
+
+notebook:
+	uv run jupyter lab --ip 0.0.0.0 --port 8888 --no-browser
 
 # Install the environment
 install:
