@@ -393,12 +393,35 @@ def gen_flipped_prompts(prompts, names, flip=("S2", "IO")):
         elif flip[0] in ["S", "S1"]:
             if flip[1] == "ANIMAL":
                 new_s = ANIMALS[np.random.randint(len(ANIMALS))]
-            if flip[1] == "RAND":
+            elif flip[1] == "RAND":
                 new_s = names[np.random.randint(len(names))]
+            elif flip[1] == "IO":
+                # MODIFIED: swap S and IO throughout the prompt to produce the
+                # symmetric IOI corruption. Replaces both S occurrences with IO and
+                # the IO occurrence with S, then swaps the labels.
+                s_old, io_old = prompt["S"], prompt["IO"]
+                # Replace ALL occurrences of S with a placeholder, then IO with S,
+                # then placeholder with IO (avoids collision when IO and S share letters)
+                t = [io_old if w == s_old else (s_old if w == io_old else w) for w in t]
+                prompt["S"], prompt["IO"] = io_old, s_old
+                # Skip the rest of the block since we've already done the substitution
+                if "IO" in prompt:
+                    prompt["text"] = " ".join(t)
+                    flipped_prompts.append(prompt)
+                else:
+                    flipped_prompts.append(
+                        {"A": prompt["A"], "B": prompt["B"], "C": prompt["C"],
+                        "text": " ".join(t)}
+                    )
+                continue
+            else:
+                raise ValueError(f"Invalid flip[1] value: {flip[1]}")
+
             t[t.index(prompt["S"])] = new_s
             if flip[0] == "S":  # literally just change the first S if this is S1
                 t[len(t) - t[::-1].index(prompt["S"]) - 1] = new_s
                 prompt["S"] = new_s
+
         elif flip[0] == "END":
             if flip[1] == "S":
                 t[len(t) - t[::-1].index(prompt["IO"]) - 1] = prompt["S"]
@@ -815,11 +838,23 @@ class IOIDataset:
             ]
         )
 
+        # self.io_tokenIDs = [
+        #     self.tokenizer.encode(" " + prompt["IO"])[0] for prompt in self.ioi_prompts
+        # ]
+        # self.s_tokenIDs = [
+        #     self.tokenizer.encode(" " + prompt["S"])[0] for prompt in self.ioi_prompts
+        # ]
+
+        # MODIFIED for Gemma compatibility: add_special_tokens=False prevents the
+        # tokenizer from auto-prepending BOS, which would make [0] return the BOS
+        # token (id=2) instead of the actual name token. — Sachin, 2026
         self.io_tokenIDs = [
-            self.tokenizer.encode(" " + prompt["IO"])[0] for prompt in self.ioi_prompts
+            self.tokenizer.encode(" " + prompt["IO"], add_special_tokens=False)[0]
+            for prompt in self.ioi_prompts
         ]
         self.s_tokenIDs = [
-            self.tokenizer.encode(" " + prompt["S"])[0] for prompt in self.ioi_prompts
+            self.tokenizer.encode(" " + prompt["S"], add_special_tokens=False)[0]
+            for prompt in self.ioi_prompts
         ]
 
         self.tokenized_prompts = []
