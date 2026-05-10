@@ -1,0 +1,577 @@
+[
+  {
+    "layer": 18,
+    "feature": 13264,
+    "label": "references to dog behaviors and interactions"
+  },
+  {
+    "layer": 18,
+    "feature": 3851,
+    "label": "references to legal terms and proceedings"
+  },
+  {
+    "layer": 18,
+    "feature": 9378,
+    "label": "instances of interpersonal conflict and emotional reactions in relationships"
+  },
+  {
+    "layer": 18,
+    "feature": 6140,
+    "label": "phrases and descriptions related to abilities and potential attributes in character-based contexts"
+  },
+  {
+    "layer": 18,
+    "feature": 11572,
+    "label": " phrases and terms related to personal relationships and family"
+  },
+  {
+    "layer": 18,
+    "feature": 1648,
+    "label": "references to actions involving assistance or support"
+  },
+  {
+    "layer": 18,
+    "feature": 12116,
+    "label": "elements related to interpersonal conflicts and emotional dynamics"
+  },
+  {
+    "layer": 18,
+    "feature": 3555,
+    "label": "elements related to healthcare quality and personnel's professional experiences"
+  },
+  {
+    "layer": 18,
+    "feature": 8578,
+    "label": "HTML/XML-like tags and structure within the text"
+  },
+  {
+    "layer": 18,
+    "feature": 7783,
+    "label": "names and titles of individuals in educational contexts"
+  },
+  {
+    "layer": 18,
+    "feature": 4651,
+    "label": "legal terms and phrases related to judicial processes and decisions"
+  },
+  {
+    "layer": 18,
+    "feature": 10451,
+    "label": " actions related to planning or decision-making"
+  },
+  {
+    "layer": 18,
+    "feature": 7768,
+    "label": "references to familial relationships and care-related themes"
+  },
+  {
+    "layer": 18,
+    "feature": 15143,
+    "label": " instances of dialogue or reported speech"
+  },
+  {
+    "layer": 18,
+    "feature": 12500,
+    "label": "the action of \"jumping.\""
+  },
+  {
+    "layer": 18,
+    "feature": 1645,
+    "label": "structured data elements in documents"
+  },
+  {
+    "layer": 18,
+    "feature": 9662,
+    "label": "references to individuals and their roles or contributions"
+  },
+  {
+    "layer": 18,
+    "feature": 11833,
+    "label": "dialogue and conversational interactions involving exchanges and responses"
+  },
+  {
+    "layer": 18,
+    "feature": 3929,
+    "label": "phrases related to gift-giving, particularly books as gifts for various occasions"
+  },
+  {
+    "layer": 18,
+    "feature": 5150,
+    "label": "references to familial relationships and personal histories"
+  },
+  {
+    "layer": 18,
+    "feature": 4886,
+    "label": " the preposition \"to\" indicating purpose or intent"
+  },
+  {
+    "layer": 18,
+    "feature": 16289,
+    "label": "elements related to wildlife and animal behavior"
+  },
+  {
+    "layer": 18,
+    "feature": 11862,
+    "label": "commands or requests for information"
+  },
+  {
+    "layer": 18,
+    "feature": 12587,
+    "label": " database-related operations and attributes"
+  },
+  {
+    "layer": 18,
+    "feature": 15272,
+    "label": "phrases describing conflict or violence"
+  },
+  {
+    "layer": 18,
+    "feature": 10415,
+    "label": "specific terms related to legal and criminal contexts"
+  },
+  {
+    "layer": 18,
+    "feature": 14807,
+    "label": "references to legal or formal documents and titles"
+  },
+  {
+    "layer": 18,
+    "feature": 2297,
+    "label": "names of prominent characters or actors associated with performances in films or television shows"
+  },
+  {
+    "layer": 18,
+    "feature": 9871,
+    "label": "regions in a scientific or technical context that relate to analyses, results, or discussions"
+  },
+  {
+    "layer": 18,
+    "feature": 4647,
+    "label": "elements related to farewells and goodbyes"
+  },
+  {
+    "layer": 18,
+    "feature": 964,
+    "label": "specific phrases and concepts related to legal terms and decision-making processes"
+  },
+  {
+    "layer": 18,
+    "feature": 5748,
+    "label": " expressions of gratitude and appreciation"
+  },
+  {
+    "layer": 18,
+    "feature": 61,
+    "label": "references to significant women in history or prominent female figures"
+  },
+  {
+    "layer": 18,
+    "feature": 15394,
+    "label": "phrases associated with legal considerations and regulations"
+  },
+  {
+    "layer": 18,
+    "feature": 1145,
+    "label": "verbs related to giving or offering"
+  },
+  {
+    "layer": 18,
+    "feature": 406,
+    "label": "details regarding experimental design and methodology in research studies"
+  },
+  {
+    "layer": 18,
+    "feature": 5983,
+    "label": "phrases related to commendation and institutional roles within a police context"
+  },
+  {
+    "layer": 18,
+    "feature": 194,
+    "label": "specific mentions of locations or places"
+  },
+  {
+    "layer": 18,
+    "feature": 11976,
+    "label": "emotional expressions related to parental approval and children's behavior"
+  },
+  {
+    "layer": 22,
+    "feature": 3497,
+    "label": "references to personal health and medical conditions"
+  },
+  {
+    "layer": 22,
+    "feature": 10043,
+    "label": "sentences that convey opinions or judgments about societal norms and personal relationships"
+  },
+  {
+    "layer": 22,
+    "feature": 15056,
+    "label": "certain key terms and phrases related to various subjects such as programming, medicine, and science"
+  },
+  {
+    "layer": 22,
+    "feature": 14314,
+    "label": "terms related to characters and their attributes in narratives"
+  },
+  {
+    "layer": 22,
+    "feature": 6990,
+    "label": "references to children and family dynamics"
+  },
+  {
+    "layer": 22,
+    "feature": 13272,
+    "label": "phrases and terms associated with dog training and handling"
+  },
+  {
+    "layer": 22,
+    "feature": 1208,
+    "label": "instances of significant financial outcomes or events related to winnings"
+  },
+  {
+    "layer": 22,
+    "feature": 4416,
+    "label": "references to character dynamics and interrelationships in narratives"
+  },
+  {
+    "layer": 22,
+    "feature": 13888,
+    "label": "verbs related to decision-making and responsibility"
+  },
+  {
+    "layer": 22,
+    "feature": 3681,
+    "label": "references to the relationship between dogs and their owners, particularly focusing on traits and behaviors that are similar"
+  },
+  {
+    "layer": 22,
+    "feature": 10191,
+    "label": " references to authority figures and their roles or statements"
+  },
+  {
+    "layer": 22,
+    "feature": 15916,
+    "label": "references to individuals and their roles in specific contexts"
+  },
+  {
+    "layer": 22,
+    "feature": 9381,
+    "label": "information related to the assessment and processing of data, particularly in decision-making contexts"
+  },
+  {
+    "layer": 22,
+    "feature": 401,
+    "label": "terms related to action and causation"
+  },
+  {
+    "layer": 22,
+    "feature": 2938,
+    "label": "terms related to healthcare systems and medical practices"
+  },
+  {
+    "layer": 22,
+    "feature": 4366,
+    "label": "mentions of specific characters and their roles in films or performances"
+  },
+  {
+    "layer": 22,
+    "feature": 1269,
+    "label": "terms related to changes in circumstances or status"
+  },
+  {
+    "layer": 22,
+    "feature": 13229,
+    "label": "clauses that express actions and their consequences"
+  },
+  {
+    "layer": 22,
+    "feature": 14178,
+    "label": "references to teenage girl characters in literature and media"
+  },
+  {
+    "layer": 22,
+    "feature": 11295,
+    "label": "the presence of quotes or dialogue"
+  },
+  {
+    "layer": 22,
+    "feature": 9723,
+    "label": "terms related to health conditions and their associated medical terminology"
+  },
+  {
+    "layer": 22,
+    "feature": 10566,
+    "label": "specific words and phrases related to arguments, reasoning, and the presentation of evidence in a legal or analytical context"
+  },
+  {
+    "layer": 22,
+    "feature": 13200,
+    "label": "medical conditions and treatments"
+  },
+  {
+    "layer": 22,
+    "feature": 4694,
+    "label": "references to biblical characters and their interactions with divine entities"
+  },
+  {
+    "layer": 22,
+    "feature": 13524,
+    "label": "historical or mythological references and events"
+  },
+  {
+    "layer": 22,
+    "feature": 13987,
+    "label": " terminology related to legal proceedings and processes"
+  },
+  {
+    "layer": 22,
+    "feature": 522,
+    "label": "references to awards and recognition in the context of television and film"
+  },
+  {
+    "layer": 22,
+    "feature": 14231,
+    "label": "mathematical symbols and expressions involving equations or inequalities"
+  },
+  {
+    "layer": 22,
+    "feature": 7714,
+    "label": " statements and concepts related to gaming and player experiences"
+  },
+  {
+    "layer": 22,
+    "feature": 2854,
+    "label": "references to personal growth and self-discovery"
+  },
+  {
+    "layer": 22,
+    "feature": 1696,
+    "label": "mentions of legal and financial issues related to celebrities"
+  },
+  {
+    "layer": 22,
+    "feature": 4226,
+    "label": "references to unity in a religious context"
+  },
+  {
+    "layer": 22,
+    "feature": 3284,
+    "label": "actions and interactions of characters with emotional undertones"
+  },
+  {
+    "layer": 22,
+    "feature": 9825,
+    "label": "references to notable individuals or significant events"
+  },
+  {
+    "layer": 22,
+    "feature": 15605,
+    "label": "references to people, specifically in a professional or collaborative context"
+  },
+  {
+    "layer": 22,
+    "feature": 13474,
+    "label": "references to collaboration and teamwork"
+  },
+  {
+    "layer": 22,
+    "feature": 5951,
+    "label": "relationships between different concepts or categories"
+  },
+  {
+    "layer": 22,
+    "feature": 8890,
+    "label": " content related to computer software installation and uninstallation processes"
+  },
+  {
+    "layer": 22,
+    "feature": 2462,
+    "label": "content typically associated with scientific or technical discussions"
+  },
+  {
+    "layer": 22,
+    "feature": 3029,
+    "label": "dysfunction and challenges associated with relationships and societal expectations"
+  },
+  {
+    "layer": 25,
+    "feature": 14325,
+    "label": " numerical data and statistics related to incidents or events"
+  },
+  {
+    "layer": 25,
+    "feature": 12908,
+    "label": "commands related to identity and credential management in a coding or command context"
+  },
+  {
+    "layer": 25,
+    "feature": 5012,
+    "label": "themes related to government and qualifications for leadership"
+  },
+  {
+    "layer": 25,
+    "feature": 16369,
+    "label": "references to individual songs or personal narratives related to music"
+  },
+  {
+    "layer": 25,
+    "feature": 7506,
+    "label": "references to legal rights and qualifications in legal contexts"
+  },
+  {
+    "layer": 25,
+    "feature": 12325,
+    "label": "details related to film production and notable figures involved in movies"
+  },
+  {
+    "layer": 25,
+    "feature": 1689,
+    "label": "HTML and XML tags, particularly those related to metadata and attributes"
+  },
+  {
+    "layer": 25,
+    "feature": 10150,
+    "label": "terms related to the performance or description of artistic or cultural expressions"
+  },
+  {
+    "layer": 25,
+    "feature": 1625,
+    "label": "elements related to academic citations and affiliations"
+  },
+  {
+    "layer": 25,
+    "feature": 499,
+    "label": "expressions of love and familial experiences"
+  },
+  {
+    "layer": 25,
+    "feature": 12993,
+    "label": " references to strong female leadership and character capabilities"
+  },
+  {
+    "layer": 25,
+    "feature": 7585,
+    "label": "references to characters, their traits, and interactions within a narrative context"
+  },
+  {
+    "layer": 25,
+    "feature": 5773,
+    "label": " expressions related to requests for assistance or advice"
+  },
+  {
+    "layer": 25,
+    "feature": 15013,
+    "label": "references to legal terms and conditions"
+  },
+  {
+    "layer": 25,
+    "feature": 16080,
+    "label": "references to personal relationships and marriages"
+  },
+  {
+    "layer": 25,
+    "feature": 11143,
+    "label": "terms related to healthcare and medical advancements"
+  },
+  {
+    "layer": 25,
+    "feature": 12005,
+    "label": " phrases related to dog training collars and their functionalities"
+  },
+  {
+    "layer": 25,
+    "feature": 8022,
+    "label": "character names and references in dialogue"
+  },
+  {
+    "layer": 25,
+    "feature": 5413,
+    "label": "references to religious authority and structures within the church"
+  },
+  {
+    "layer": 25,
+    "feature": 2694,
+    "label": "references to professional development and the challenges faced by individuals in the workplace"
+  },
+  {
+    "layer": 25,
+    "feature": 8083,
+    "label": " phrases indicating processes of measurement, evaluation, or identification within various contexts"
+  },
+  {
+    "layer": 25,
+    "feature": 12394,
+    "label": "references to interactions with dogs and humorous situations involving them"
+  },
+  {
+    "layer": 25,
+    "feature": 15320,
+    "label": "terms related to online advertising and services"
+  },
+  {
+    "layer": 25,
+    "feature": 6280,
+    "label": "references to the Levitical priesthood and their duties within biblical texts"
+  },
+  {
+    "layer": 25,
+    "feature": 11657,
+    "label": "topics related to animal behavior and interaction with their environment"
+  },
+  {
+    "layer": 25,
+    "feature": 3936,
+    "label": "statistical terms and references to analysis in various contexts"
+  },
+  {
+    "layer": 25,
+    "feature": 14833,
+    "label": "structured data and database commands"
+  },
+  {
+    "layer": 25,
+    "feature": 12182,
+    "label": " statements related to legal processes and court proceedings"
+  },
+  {
+    "layer": 25,
+    "feature": 10652,
+    "label": "actions related to legal and personal conflict situations"
+  },
+  {
+    "layer": 25,
+    "feature": 105,
+    "label": "terms related to criminal actions, specifically firearms and drug-related offenses"
+  },
+  {
+    "layer": 25,
+    "feature": 9587,
+    "label": "references to historical figures and events"
+  },
+  {
+    "layer": 25,
+    "feature": 16016,
+    "label": "attributes related to teenage social dynamics and struggles"
+  },
+  {
+    "layer": 25,
+    "feature": 3627,
+    "label": " numerical values and symbols associated with programming or technical data"
+  },
+  {
+    "layer": 25,
+    "feature": 15762,
+    "label": "indications of romantic tension and interpersonal relationships"
+  },
+  {
+    "layer": 25,
+    "feature": 7479,
+    "label": " sequences that denote data structures or code elements in programming contexts"
+  },
+  {
+    "layer": 25,
+    "feature": 9178,
+    "label": "terms related to acknowledgments and gratitude"
+  }
+]
