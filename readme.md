@@ -1,5 +1,7 @@
 # Independence Is All You Need
 
+Video walkthrough: <https://www.youtube.com/watch?v=iKB93PyhBjg&t=1s>
+
 > Constraint-based causal discovery (the PC algo) over SAE features in Gemma-2-2B on the Indirect Object Identification (IOI) task.
 
 Attribution patching (AP), the current state-of-the-art for SAE feature-circuit recovery, is a marginal-effect estimator. As a result it cannot distinguish a chain $A \to C \to B$ from a v-structure $A \to C \leftarrow B$, because that distinction lives in conditional dependencies. The PC algorithm from PGMs closes the gap. Applied to SAE features from Gemma-2-2B on IOI, PC recovers 599 v-structures across $N = 5{,}000$ prompts, of which a sampled cross-layer subset is 100% interventionally validated.
