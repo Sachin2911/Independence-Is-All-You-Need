@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Independence Is All You Need — Sachin Mohan</title>
+<meta name="description" content="Constraint-based causal discovery (the PC algorithm) over SAE features in Gemma-2-2B on the Indirect Object Identification task.">
+<meta name="author" content="Sachin Mohan">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Independence Is All You Need">
+<meta property="og:description" content="Constraint-based causal discovery (the PC algorithm) over SAE features in Gemma-2-2B on the Indirect Object Identification task.">
+<meta property="og:url" content="https://sachin2911.github.io/Independence-Is-All-You-Need/">
+<meta name="twitter:card" content="summary">
+
+<style>
+  :root {
+    --bg: #fdfdfc;
+    --fg: #1a1a18;
+    --muted: #6b6b66;
+    --rule: #e2e1dc;
+    --accent: #7c2d12;
+    --card: #f6f5f1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16161a;
+      --fg: #e8e8e4;
+      --muted: #9b9b95;
+      --rule: #2e2e34;
+      --accent: #e8a87c;
+      --card: #1e1e23;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; }
+
+  h1 {
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0 0 0.9rem;
+    font-weight: 600;
+  }
+
+  .byline { margin: 0; font-size: 1.05rem; }
+  .byline a { color: inherit; }
+
+  .affil {
+    margin: 0.3rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.9rem 0 0;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1.05rem;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    text-decoration: none;
+    color: var(--fg);
+    background: var(--card);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 0.88rem;
+    letter-spacing: 0.01em;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .btn.primary {
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
+  }
+  .btn.primary:hover { opacity: 0.82; color: var(--bg); }
+
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 3rem 0 0.9rem;
+  }
+
+  .abstract { text-align: justify; hyphens: auto; }
+  .abstract p { margin: 0 0 1rem; }
+
+  .viewer {
+    margin-top: 0.5rem;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--card);
+  }
+  .viewer object, .viewer iframe {
+    display: block;
+    width: 100%;
+    height: 78vh;
+    min-height: 30rem;
+    border: 0;
+  }
+  .viewer .fallback {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+  footer a { color: var(--muted); }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Independence Is All You Need</h1>
+    <p class="byline"><a href="mailto:sachin@opencolab.dev">Sachin Mohan</a></p>
+    <p class="affil">University of the Witwatersrand · Johannesburg, South Africa</p>
+
+    <div class="actions">
+      <a class="btn primary" href="paper/Independence_Is_All_You_Need.pdf">Read the paper (PDF)</a>
+      <a class="btn" href="https://www.youtube.com/watch?v=iKB93PyhBjg">Video walkthrough</a>
+      <a class="btn" href="https://github.com/Sachin2911/Independence-Is-All-You-Need">Code &amp; data</a>
+    </div>
+  </header>
+
+  <h2>Abstract</h2>
+  <div class="abstract">
+    <p>Large language models compute via dense activation vectors at every layer of their residual
+    stream, an internal representation that resists direct human interpretation. From this the field
+    of mechanistic interpretability evolved and seeks to reverse-engineer these representations into
+    interpretable features and the circuits they form. As a result sparse autoencoders (SAEs) have
+    become the standard tool for that first step, decomposing the residual stream into sparse, often
+    interpretable, feature directions. However, recovering the circuits that connect those features
+    remains open.</p>
+
+    <p>The state of the art uses attribution patching (AP), a gradient-based marginal-effect
+    estimator that scores each feature's individual contribution to a behaviour. AP has a structural
+    blind spot: as a marginal estimator, it cannot distinguish a chain <em>A → C → B</em> from a
+    v-structure/collider <em>A → C ← B</em>, since that distinction lives in conditional
+    dependencies. This is precisely the gap that probabilistic graphical models were developed to
+    close. Constraint-based causal discovery, exemplified by the PC algorithm of Spirtes and
+    Glymour, recovers v-structures via systematic conditional independence tests — the operation AP
+    lacks.</p>
+
+    <p>PC is applied in this research to SAE features extracted from the Gemma-2-2B model on the
+    indirect object identification (IOI) task across <em>N</em> = 5,000 prompts. The recovered graph
+    contains 599 v-structures. Interventional validation confirms a 100% pass rate on 50 sampled
+    cross-layer edges (mean |Δ| = 5.92). A case-study v-structure shows the textbook explaining-away
+    signature (χ² marginal <em>p</em> = 0.603, conditional <em>p</em> &lt; 0.0001), with asymmetric
+    do-ablations (Δ<sub>C</sub> = +0.879 vs −1.752) confirming oriented causation. The structure
+    persists across two orders of magnitude in significance threshold. <em>PC over SAE features
+    recovers feature-circuit structure that attribution patching cannot represent.</em></p>
+  </div>
+
+  <h2>Paper</h2>
+  <div class="viewer">
+    <object data="paper/Independence_Is_All_You_Need.pdf" type="application/pdf">
+      <div class="fallback">
+        Your browser can't display the PDF inline.
+        <a href="paper/Independence_Is_All_You_Need.pdf">Download it here</a>.
+      </div>
+    </object>
+  </div>
+
+  <footer>
+    Source, notebooks and data:
+    <a href="https://github.com/Sachin2911/Independence-Is-All-You-Need">github.com/Sachin2911/Independence-Is-All-You-Need</a>
+  </footer>
+
+</div>
+</body>
+</html>
